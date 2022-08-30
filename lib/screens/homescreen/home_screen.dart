@@ -9,25 +9,9 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Color(0xFFFCFAF8),
       body: SafeArea(
         child: ListView(
-          children: <Widget>[
+          children: [
             LogoWidget(),
-            SizedBox(height: 15.0),
-            Container(
-              padding: EdgeInsets.only(right: 15.0),
-              width: MediaQuery.of(context).size.width - 30.0,
-              height: MediaQuery.of(context).size.height - 50.0,
-              child: GridView.count(
-                crossAxisCount: 2,
-                primary: false,
-                crossAxisSpacing: 10.0,
-                mainAxisSpacing: 15.0,
-                childAspectRatio: 0.8,
-                children: <Widget>[
-                  ItemsWidget(),
-                ],
-              ),
-            ),
-            SizedBox(height: 15.0)
+            ItemsWidget(),
           ],
         ),
       ),
@@ -84,7 +68,7 @@ class ItemsWidget extends StatelessWidget {
               child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: ListTile(
-                  title: Text(items[index+1]),
+                  title: Text(items[index + 1]),
                 ),
               ),
             ),
