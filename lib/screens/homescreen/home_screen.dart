@@ -84,7 +84,7 @@ class ItemsWidget extends StatelessWidget {
               child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: ListTile(
-                  title: Text(items[index]),
+                  title: Text(items[index+1]),
                 ),
               ),
             ),
